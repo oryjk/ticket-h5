@@ -1,6 +1,8 @@
-import './assets/main.css'
-
 import { createApp } from 'vue'
+import NutUI from "@nutui/nutui";
+import "@nutui/nutui/dist/style.css";
 import App from './App.vue'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+app.use(NutUI)
+app.mount('#app')
